@@ -1,0 +1,479 @@
+/* Ursus: cream enamel, a teal equipment rack, punched labels and real gauges. */
+:root[data-chrome="industrial"] .sidebar {
+  width: var(--sidebar-width);
+  flex-basis: var(--sidebar-width);
+  padding: 24px 14px 14px;
+  color: var(--rail-ink);
+  background: var(--rail-bg);
+  border-right: 6px solid var(--decor-ink);
+  position: relative;
+}
+:root[data-chrome="industrial"] .sidebar::after {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  border: 1px solid color-mix(in oklch, var(--rail-ink), transparent 75%);
+  pointer-events: none;
+}
+:root[data-chrome="industrial"] .brand.small {
+  margin-bottom: 16px;
+  color: var(--rail-ink);
+}
+:root[data-chrome="industrial"] .brand.small > span {
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 30px;
+}
+:root[data-chrome="industrial"] .brand.small small {
+  color: var(--rail-ink);
+  font: 600 12px var(--font-display);
+  letter-spacing: 3px;
+}
+:root[data-chrome="industrial"] .terminal-identity {
+  display: block;
+  position: relative;
+  height: 145px;
+  margin: 0 0 20px;
+  overflow: hidden;
+  border-block: 1px solid color-mix(in oklch, var(--rail-ink), transparent 65%);
+  background: var(--theme-object) right bottom / 94% auto no-repeat;
+}
+:root[data-chrome="industrial"] .terminal-identity-code {
+  position: absolute;
+  top: 10px;
+  left: 6px;
+  font: 600 17px var(--font-display);
+  letter-spacing: 2px;
+  color: var(--rail-ink);
+}
+:root[data-chrome="industrial"] .terminal-identity-name {
+  position: absolute;
+  bottom: 6px;
+  left: 6px;
+  font-size: 10px;
+  color: var(--rail-ink);
+  background: var(--rail-bg);
+  padding: 2px 5px;
+}
+:root[data-chrome="industrial"] .terminal-identity-art,
+:root[data-chrome="industrial"] .terminal-identity-signal {
+  display: none;
+}
+:root[data-chrome="industrial"] .sidebar nav {
+  gap: 8px;
+}
+:root[data-chrome="industrial"] .sidebar nav .button {
+  color: var(--rail-ink);
+  border: 1px solid color-mix(in oklch, var(--rail-ink), transparent 70%);
+  border-radius: 0;
+  height: 49px;
+  padding-inline: 12px;
+  background: var(--rail-bg);
+}
+:root[data-chrome="industrial"] .sidebar nav .button.active {
+  background: var(--surface);
+  color: var(--fg);
+  border-color: var(--surface);
+  border-left: 5px solid var(--decor-ink);
+  box-shadow: 3px 3px 0 var(--shade-2);
+}
+:root[data-chrome="industrial"] .nav-index {
+  color: inherit;
+  font-size: 20px;
+}
+:root[data-chrome="industrial"] .sidebar nav .button.nav-group-start {
+  margin-top: 8px;
+}
+:root[data-chrome="industrial"] .connection-button {
+  color: var(--rail-ink);
+  border: 1px solid color-mix(in oklch, var(--rail-ink), transparent 60%);
+  background: transparent;
+  border-radius: 0;
+}
+:root[data-chrome="industrial"] .connection-button strong,
+:root[data-chrome="industrial"] .connection-button small,
+:root[data-chrome="industrial"] .app-version {
+  color: var(--rail-ink);
+  opacity: 0.65;
+}
+:root[data-chrome="industrial"] .connection-button .status-dot {
+  background: var(--rail-ink);
+}
+:root[data-chrome="industrial"] .main {
+  background: var(--theme-texture), var(--bg);
+}
+:root[data-chrome="industrial"] .page-header {
+  height: var(--header-height);
+  background: var(--surface);
+  border-bottom: 4px solid var(--fg);
+}
+:root[data-chrome="industrial"] .page-header h1 {
+  font-size: 34px;
+  font-weight: 850;
+  letter-spacing: 4px;
+}
+:root[data-chrome="industrial"] .page-overline {
+  color: var(--decor-ink);
+  font-size: 13px;
+  letter-spacing: 3px;
+}
+:root[data-chrome="industrial"] .page-title {
+  border-left: 8px solid var(--decor-ink);
+  padding-left: 14px;
+}
+:root[data-chrome="industrial"] .workbench-layout {
+  gap: 20px;
+  grid-template-columns: minmax(0, 1.3fr) minmax(250px, 1fr);
+}
+:root[data-chrome="industrial"]
+  :is(
+    .terminal-console,
+    .workspace-summary,
+    .library-console,
+    .editor-metadata,
+    .editor-tracks
+  ) {
+  border: 2px solid var(--line-2);
+  border-radius: 0;
+  box-shadow: 3px 3px 0 color-mix(in oklch, var(--fg), transparent 60%);
+}
+:root[data-chrome="industrial"] .module-caption {
+  background: var(--fg);
+  color: var(--surface);
+  letter-spacing: 2px;
+  height: 31px;
+  border: 0;
+}
+:root[data-chrome="industrial"] .terminal-console {
+  background: var(--surface);
+}
+:root[data-chrome="industrial"] .console-display {
+  min-height: 222px;
+}
+:root[data-chrome="industrial"] .console-copy {
+  padding: 22px;
+}
+:root[data-chrome="industrial"] .console-copy h2 {
+  font-size: 34px;
+  line-height: 1.4;
+  font-weight: 850;
+  letter-spacing: -1px;
+}
+:root[data-chrome="industrial"] .console-edition {
+  font-weight: 700;
+  color: var(--decor-ink);
+  border-bottom: 3px solid var(--decor-ink);
+  padding-bottom: 3px;
+}
+:root[data-chrome="industrial"] .console-object {
+  right: -14%;
+  top: 27%;
+  width: 63%;
+  height: 75%;
+  opacity: 0.85;
+}
+:root[data-chrome="industrial"] .console-sticker {
+  bottom: 8px;
+  right: -10px;
+  width: 60%;
+  height: 22px;
+}
+:root[data-chrome="industrial"] .console-registration {
+  top: 16px;
+  bottom: auto;
+  right: 10px;
+  writing-mode: vertical-rl;
+  font-size: 9px;
+  color: var(--fg-2);
+}
+:root[data-chrome="industrial"] .console-actions {
+  border-top: 2px solid var(--line-2);
+  padding: 15px 20px;
+}
+:root[data-chrome="industrial"] .console-actions .console-new {
+  background: var(--theme-control) center / 100% 100% no-repeat;
+  color: var(--fg);
+  border: 0;
+  padding: 0 18px 0 38px;
+  height: 42px;
+  box-shadow: none;
+}
+:root[data-chrome="industrial"] .workspace-summary {
+  color: var(--rail-ink);
+  background: var(--rail-bg);
+  --fg: var(--rail-ink);
+  --fg-2: color-mix(in oklch, var(--rail-ink) 85%, var(--rail-bg));
+  --fg-3: color-mix(in oklch, var(--rail-ink) 70%, var(--rail-bg));
+  --signal: var(--rail-signal);
+  --line: color-mix(in oklch, var(--rail-ink) 29%, var(--rail-bg));
+  --line-2: color-mix(in oklch, var(--rail-ink) 49%, var(--rail-bg));
+}
+:root[data-chrome="industrial"] .resource-caption {
+  background: var(--decor-ink);
+  color: var(--rail-ink);
+}
+:root[data-chrome="industrial"] .summary-numbers {
+  padding: 10px 12px 40px;
+  gap: 6px;
+}
+:root[data-chrome="industrial"] .summary-number {
+  border: 0;
+  position: relative;
+  background: var(--theme-frame) center 0 / 100% 82px no-repeat;
+  padding: 19px 0 6px;
+  gap: 23px;
+}
+:root[data-chrome="industrial"] .summary-number strong {
+  font-size: 38px;
+  width: 76%;
+  background: var(--rail-bg);
+  border-radius: 3px;
+  text-align: center;
+  color: var(--signal);
+  text-shadow: 0 0 10px color-mix(in oklch, var(--signal), transparent 50%);
+}
+:root[data-chrome="industrial"] .summary-number span {
+  color: var(--rail-ink);
+}
+:root[data-chrome="industrial"] .resource-top {
+  padding: 18px 14px;
+}
+:root[data-chrome="industrial"] .resource-symbol {
+  width: 34px;
+  height: 34px;
+}
+:root[data-chrome="industrial"] .pack-section > .section-heading {
+  padding: 10px 0;
+  border-top: 4px solid var(--fg);
+  border-bottom: 1px solid var(--line-2);
+}
+:root[data-chrome="industrial"] .section-heading h2 {
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+:root[data-chrome="industrial"] .pack-row {
+  border: 2px solid var(--line-2);
+  border-left: 9px solid var(--decor-ink);
+  background: var(--surface);
+  box-shadow: 3px 3px 0 var(--line);
+}
+:root[data-chrome="industrial"] .pack-row::before,
+:root[data-chrome="industrial"] .pack-row::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: var(--fg-2);
+  border-radius: 50%;
+  right: 7px;
+}
+:root[data-chrome="industrial"] .pack-row::before {
+  top: 7px;
+}
+:root[data-chrome="industrial"] .pack-row::after {
+  bottom: 7px;
+}
+:root[data-chrome="industrial"] .pack-art {
+  background:
+    var(--theme-card) center top / 58px no-repeat,
+    var(--rail-bg);
+  border: 0;
+  height: 84px;
+}
+:root[data-chrome="industrial"] .pack-serial {
+  color: var(--rail-ink);
+  bottom: 1px;
+  left: 8px;
+  font-size: 24px;
+}
+:root[data-chrome="industrial"] .pack-new-tile {
+  border: 2px dashed var(--line-2);
+  background: color-mix(in oklch, var(--surface), transparent 40%);
+}
+:root[data-chrome="industrial"]
+  :is(.button, .select-trigger, input, textarea, .segmented) {
+  border-radius: 0;
+}
+:root[data-chrome="industrial"] .button-secondary {
+  border: 1px solid var(--line-2);
+  box-shadow: 0 2px 0 var(--line-2);
+}
+:root[data-chrome="industrial"] .button-primary {
+  border-bottom: 3px solid var(--decor-ink);
+  letter-spacing: 0.5px;
+}
+:root[data-chrome="industrial"] .bundle-channel {
+  border: 2px solid var(--line-2);
+  background: var(--surface);
+  box-shadow: 0 3px 0 var(--line);
+}
+:root[data-chrome="industrial"] .bundle-channel[aria-pressed="true"] {
+  background: var(--rail-bg);
+  color: var(--rail-ink);
+  border-color: var(--rail-bg);
+  box-shadow: 0 4px 0 var(--decor-ink);
+}
+:root[data-chrome="industrial"]
+  .bundle-channel[aria-pressed="true"]
+  :is(small, .channel-number) {
+  color: var(--rail-ink);
+}
+:root[data-chrome="industrial"] .voice-table th {
+  color: var(--rail-ink);
+  background: var(--rail-bg);
+}
+:root[data-chrome="industrial"] .voice-table th .button {
+  color: var(--rail-ink);
+}
+:root[data-chrome="industrial"] .voice-table tbody tr:nth-child(2n) {
+  background: color-mix(in oklch, var(--fill), var(--surface));
+}
+:root[data-chrome="industrial"] .voice-table .clip-name {
+  font-weight: 600;
+  color: var(--fg);
+}
+:root[data-chrome="industrial"] .editor-metadata .module-caption {
+  background: var(--decor-ink);
+  color: var(--rail-ink);
+}
+:root[data-chrome="industrial"] .editor-bottom {
+  border-top: 5px solid var(--fg);
+}
+:root[data-chrome="industrial"] .switch {
+  width: 42px;
+  height: 24px;
+  padding: 3px;
+  background: var(--line-2);
+  border-radius: 3px;
+  box-shadow: inset 0 2px 3px var(--shade-2);
+}
+:root[data-chrome="industrial"] .switch-thumb {
+  height: 18px;
+  width: 18px;
+  background:
+    var(--theme-indicator) center / contain no-repeat,
+    var(--surface);
+  border: 1px solid var(--line-2);
+  border-radius: 50%;
+}
+:root[data-chrome="industrial"] .switch[data-state="checked"] {
+  background: var(--signal);
+}
+:root[data-chrome="industrial"] .switch[data-state="checked"] .switch-thumb {
+  transform: translateX(18px);
+}
+:root[data-chrome="industrial"] .checkbox {
+  border: 1px solid var(--fg-2);
+  border-radius: 1px;
+  background: var(--surface-pop);
+}
+:root[data-chrome="industrial"] .checkbox[data-state="checked"] {
+  background: var(--rail-bg);
+  color: var(--rail-ink);
+}
+:root[data-chrome="industrial"]
+  :is(.dialog, .help-content, .volume-menu, .select-menu, .audio-player) {
+  border: 2px solid var(--line-2);
+  border-radius: 0;
+  box-shadow: 5px 5px 0 var(--shade-2);
+}
+:root[data-chrome="industrial"] .dialog > header {
+  background: var(--rail-bg);
+  color: var(--rail-ink);
+  border-bottom: 4px solid var(--decor-ink);
+}
+:root[data-chrome="industrial"] .dialog > header .button {
+  color: var(--rail-ink);
+}
+:root[data-chrome="industrial"] .theme-card {
+  border: 2px solid var(--line-2);
+  border-radius: 0;
+  box-shadow: 3px 3px 0 var(--line);
+}
+:root[data-chrome="industrial"] .theme-card[aria-checked="true"] {
+  border-color: var(--decor-ink);
+  box-shadow: 4px 4px 0 var(--decor-ink);
+}
+:root[data-chrome="industrial"]
+  .theme-card[aria-checked="true"]
+  .theme-card-footer {
+  background: var(--rail-bg);
+  color: var(--rail-ink);
+}
+:root[data-chrome="industrial"]
+  .theme-card[aria-checked="true"]
+  .theme-default {
+  color: var(--rail-ink);
+}
+:root[data-chrome="industrial"] .theme-radio {
+  color: var(--rail-ink);
+}
+:root[data-chrome="industrial"] .statusbar {
+  background: var(--rail-bg);
+  color: var(--rail-ink);
+  border: 0;
+}
+:root[data-chrome="industrial"] .statusbar .button {
+  color: var(--rail-ink);
+}
+:root[data-chrome="industrial"] .statusbar .status-dot {
+  background: var(--rail-ink);
+}
+:root[data-chrome="industrial"] .onboarding-scroll {
+  background:
+    var(--theme-scene) right bottom / 55% auto no-repeat,
+    var(--bg);
+}
+:root[data-chrome="industrial"] .onboarding {
+  background: var(--surface);
+  border: 2px solid var(--fg);
+  border-top: 8px solid var(--decor-ink);
+  padding: 32px;
+  box-shadow: 6px 6px 0 var(--line);
+}
+@media (max-height: 780px) {
+  :root[data-chrome="industrial"] .terminal-identity {
+    height: 95px;
+    background-size: 65% auto;
+    margin-bottom: 14px;
+  }
+  :root[data-chrome="industrial"] .sidebar nav .button {
+    height: 44px;
+  }
+}
+@container (max-width: 880px) {
+  :root[data-chrome="industrial"] .console-copy h2 {
+    font-size: 28px;
+  }
+  :root[data-chrome="industrial"] .console-actions {
+    padding-inline: 12px;
+  }
+  :root[data-chrome="industrial"] .summary-number strong {
+    font-size: 32px;
+  }
+}
+@container (max-width: 670px) {
+  :root[data-chrome="industrial"] .workbench-layout {
+    grid-template-columns: 1fr;
+  }
+  :root[data-chrome="industrial"] .summary-numbers {
+    padding-bottom: 24px;
+  }
+  :root[data-chrome="industrial"] .summary-number {
+    background-size: 100px 82px;
+  }
+}
+
+:root[data-chrome="industrial"] .console-new > svg {
+  display: none;
+}
+
+@media (max-height: 700px) {
+  :root[data-chrome="industrial"] .terminal-identity {
+    display: none;
+  }
+  :root[data-chrome="industrial"] .sidebar {
+    padding-top: 18px;
+  }
+}

@@ -1,0 +1,35 @@
+:root {
+  --font:
+    -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC",
+    "Hiragino Sans GB", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --shadow-pop:
+    0 0 0 0.5px var(--line-2), 0 10px 30px -10px var(--shade-2),
+    0 2px 8px -2px var(--shade);
+  --shadow-dlg:
+    0 0 0 0.5px var(--line-2), 0 24px 64px -16px var(--shade-2),
+    0 4px 14px -4px var(--shade);
+  --d1: 120ms;
+  --d2: 180ms;
+  --d3: 240ms;
+  --ease: cubic-bezier(0.2, 0, 0, 1);
+  --ui-scale: 1;
+}
+[data-motion="off"] {
+  --d1: 0ms;
+  --d2: 0ms;
+  --d3: 0ms;
+}
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --d1: 0ms;
+    --d2: 0ms;
+    --d3: 0ms;
+  }
+}
+@media (prefers-contrast: more) {
+  :root {
+    --line: var(--line-2) !important;
+    --fg-3: var(--fg-2) !important;
+  }
+}

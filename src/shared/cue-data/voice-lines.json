@@ -1,0 +1,97 @@
+[
+  {
+    "clip": "CN_001",
+    "title": "模拟开始1",
+    "showType": 35
+  },
+  {
+    "clip": "CN_002",
+    "title": "模拟开始2",
+    "showType": 35
+  },
+  {
+    "clip": "CN_003",
+    "title": "模拟开始3",
+    "showType": 35
+  },
+  {
+    "clip": "CN_004",
+    "title": "完美作战1",
+    "showType": 36
+  },
+  {
+    "clip": "CN_005",
+    "title": "完美作战2",
+    "showType": 36
+  },
+  {
+    "clip": "CN_006",
+    "title": "非完美作战1",
+    "showType": 37
+  },
+  {
+    "clip": "CN_007",
+    "title": "非完美作战2",
+    "showType": 37
+  },
+  {
+    "clip": "CN_008",
+    "title": "领袖回合",
+    "showType": 38
+  },
+  {
+    "clip": "CN_009",
+    "title": "隐秘回合",
+    "showType": 39
+  },
+  {
+    "clip": "CN_010",
+    "title": "晋升机会1",
+    "showType": 40
+  },
+  {
+    "clip": "CN_011",
+    "title": "晋升机会2",
+    "showType": 40
+  },
+  {
+    "clip": "CN_012",
+    "title": "调度干员1",
+    "showType": 41
+  },
+  {
+    "clip": "CN_013",
+    "title": "调度干员2",
+    "showType": 42
+  },
+  {
+    "clip": "CN_014",
+    "title": "升级中心1",
+    "showType": 43
+  },
+  {
+    "clip": "CN_017",
+    "title": "升级中心2",
+    "showType": 43
+  },
+  {
+    "clip": "CN_018",
+    "title": "倒计时",
+    "showType": 44
+  },
+  {
+    "clip": "CN_019",
+    "title": "晋升成功",
+    "showType": 45
+  },
+  {
+    "clip": "CN_020",
+    "title": "盟约叠加",
+    "showType": 46
+  },
+  {
+    "clip": "CN_021",
+    "title": "冻结",
+    "showType": 47
+  }
+]

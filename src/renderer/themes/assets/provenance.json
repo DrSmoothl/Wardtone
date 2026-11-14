@@ -1,0 +1,155 @@
+{
+  "bundleVersion": "26-11-06-13-05-11-41977313",
+  "assets": [
+    {
+      "file": "closure-backdrop.png",
+      "source": "ui/autochess/[uc]autochessouter.ab",
+      "sprite": "background_pre_closur",
+      "sha256": "6098fc41bc638aae8b5fea464cec13c29650853d87b82310adea848a237d3fe7"
+    },
+    {
+      "file": "terminal-backdrop.png",
+      "source": "ui/autochess/[uc]autochessouter.ab",
+      "sprite": "background_pre_initial",
+      "sha256": "ad6232d4514523baa0e681fec70497f6218a234e3fce92f88d8dc5d4f3fc193d"
+    },
+    {
+      "file": "ursus-backdrop.png",
+      "source": "ui/autochess/[uc]autochessouter.ab",
+      "sprite": "background_pre_iron",
+      "sha256": "3c4cb3d35cff7a0f61692698d9fdb17d70a4dd9989da6045d4af90cd85781e14"
+    },
+    {
+      "file": "closure-emblem.png",
+      "source": "ui/autochess/autochessvariantskin/[uc]ac_s_closur.ab",
+      "sprite": "img_logo",
+      "sha256": "4bb6495420532016ef417c638484d635abca8ff86d236cca556d097a76df2b87"
+    },
+    {
+      "file": "terminal-contours.png",
+      "source": "ui/autochess/autochessvariantskin/[uc]ac_n_initial.ab",
+      "sprite": "round_bg_line",
+      "sha256": "4a5d57543d61652cd906f61fd734033529b3ffe9b440598ff6ab7d79a3a28954"
+    },
+    {
+      "file": "ursus-emblem.png",
+      "source": "ui/autochess/autochessvariantskin/[uc]ac_n_iron.ab",
+      "sprite": "bg_4",
+      "sha256": "c8940b0969cba0e9869d6c123d5cfadad7e300d148775429b3c1c01aecabf33e"
+    },
+    {
+      "file": "closure-landscape.png",
+      "source": "ui/autochess/autochessvariantskin/[uc]ac_s_closur.ab",
+      "sprite": "bg_2",
+      "sha256": "6cd92a62dd55f3a185354d064acb0e64f03f316a35d4cdad8b542bf791ab8be8"
+    },
+    {
+      "file": "closure-window.png",
+      "source": "ui/autochess/autochessvariantskin/[uc]ac_s_closur.ab",
+      "sprite": "window_main_frame",
+      "sha256": "59230243c5955ed8c9070ed0013099aa59eccbace39d443217d9f82f11e592b3"
+    },
+    {
+      "file": "closure-floor.png",
+      "source": "ui/autochess/autochessvariantskin/[uc]ac_s_closur.ab",
+      "sprite": "window_main_bg",
+      "sha256": "6e10ddbff5db53a29d39fff67b339bb35fc6c102561bf59c52833457114834d4"
+    },
+    {
+      "file": "closure-ready.png",
+      "source": "ui/autochess/autochessvariantskin/[uc]ac_s_closur.ab",
+      "sprite": "btn_ready",
+      "sha256": "cb5cdbdec17d10db6cebea20254dfa9be8d072491c5e7159d20053831239585c"
+    },
+    {
+      "file": "closure-refresh.png",
+      "source": "ui/autochess/autochessvariantskin/[uc]ac_s_closur.ab",
+      "sprite": "refresh_bg_normal",
+      "sha256": "c8aa6eae19909901be7cc5f65f431cf00acee63ef5cf6a946b997f5a10b895df"
+    },
+    {
+      "file": "closure-cube.png",
+      "source": "ui/autochess/autochessvariantskin/[uc]ac_s_closur.ab",
+      "sprite": "closure_deco_active",
+      "sha256": "e61e734eb309da31d610ed3edac8b208fd50b4753a31c2b398207b27bc0eb4a6"
+    },
+    {
+      "file": "closure-monitors.png",
+      "source": "ui/autochess/autochessvariantskin/[uc]ac_s_closur.ab",
+      "sprite": "bg_tv_normal",
+      "sha256": "0460f67bfd5a40e15444b0044c1a0e0bb1b2dd2153ac5e043af2de801d8b2448"
+    },
+    {
+      "file": "closure-sticker.png",
+      "source": "ui/autochess/autochessvariantskin/[uc]ac_s_closur.ab",
+      "sprite": "upgrade_deco_front",
+      "sha256": "c2d273e80430e9c4daee16cc3e50cc8b2c223519d17946baad621dde282bf273"
+    },
+    {
+      "file": "terminal-radar.png",
+      "source": "ui/autochess/autochessvariantskin/[uc]ac_n_initial.ab",
+      "sprite": "bg_circle_left",
+      "sha256": "01a7e3a2fc7bfb04d761a13e5089626c23e5adebbde5de083c7c0416dd1ddf7b"
+    },
+    {
+      "file": "terminal-indicator.png",
+      "source": "ui/autochess/autochessvariantskin/[uc]ac_n_initial.ab",
+      "sprite": "bg_active",
+      "sha256": "46aeb246f35e59afc9f382df3f48f1f790ba2582c10216f4d93d50e90b597702"
+    },
+    {
+      "file": "terminal-schematic.png",
+      "source": "ui/autochess/autochessvariantskin/[uc]ac_n_initial.ab",
+      "sprite": "bg_open",
+      "sha256": "4af63cd790b2f49d4ec1f53f1ccc765520d50f330d138b7d11408eab4664797f"
+    },
+    {
+      "file": "terminal-refresh.png",
+      "source": "ui/autochess/autochessvariantskin/[uc]ac_n_initial.ab",
+      "sprite": "refresh_bg_normal",
+      "sha256": "c2f8af2d59ed8c10e95fa18b33b5698820de975cf57414c7b9055c2223e7d9bd"
+    },
+    {
+      "file": "terminal-mark.png",
+      "source": "ui/autochess/autochessvariantskin/[uc]ac_n_initial.ab",
+      "sprite": "deco_item",
+      "sha256": "f22c1c4cc2eab94cd04318bc4a7f3661529aec78628fb27abfba31ccd7d2ead7"
+    },
+    {
+      "file": "ursus-flags.png",
+      "source": "ui/autochess/autochessvariantskin/[uc]ac_n_iron.ab",
+      "sprite": "bg_1",
+      "sha256": "c193201dc9912f63429622e56e1833566153473a02a8dc512b6274901a5ac612"
+    },
+    {
+      "file": "ursus-poster.png",
+      "source": "ui/autochess/autochessvariantskin/[uc]ac_n_iron.ab",
+      "sprite": "goal_bg_desc",
+      "sha256": "710b058966deac5836e33164259f230528735aaebe68ef8aba3c565b9997f633"
+    },
+    {
+      "file": "ursus-gauge.png",
+      "source": "ui/autochess/autochessvariantskin/[uc]ac_n_iron.ab",
+      "sprite": "bg_lv",
+      "sha256": "c6d4ea982ebdf8b59e9391151ac39f6c36cae53733cc6a8eab76cf6b7c2f39ab"
+    },
+    {
+      "file": "ursus-refresh.png",
+      "source": "ui/autochess/autochessvariantskin/[uc]ac_n_iron.ab",
+      "sprite": "refresh_bg_normal",
+      "sha256": "a60157eadc9c5dfb5278c5c84f4b5cd539040c39a4f173de9f23d1f2f1452c5e"
+    },
+    {
+      "file": "ursus-dial.png",
+      "source": "ui/autochess/autochessvariantskin/[uc]ac_n_iron.ab",
+      "sprite": "bg_active",
+      "sha256": "ba80fd43da4018c99860591a9f9dd50afb2e118645a93dd8df28a7cc6faefa56"
+    },
+    {
+      "file": "ursus-sash.png",
+      "source": "ui/autochess/autochessvariantskin/[uc]ac_n_iron.ab",
+      "sprite": "img_back",
+      "sha256": "2fbb9e1944129c42c2f3ba1b55d9c8026cf1592cb9eea479b2d10cdd51852bc7"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+import { build } from 'esbuild';
+import { createServer } from 'vite';
+import { spawn } from 'node:child_process';
+import electron from 'electron';
+await build({entryPoints:['src/main/index.ts'],outfile:'dist/main/index.cjs',bundle:true,platform:'node',format:'cjs',external:['electron']});
+await build({entryPoints:['src/preload/index.ts'],outfile:'dist/preload/index.cjs',bundle:true,platform:'node',format:'cjs',external:['electron']});
+await build({entryPoints:['src/main/backend.ts'],outfile:'dist/main/backend.cjs',bundle:true,platform:'node',format:'cjs'});
+const server=await createServer(); await server.listen();
+const child=spawn(String(electron),['.'],{stdio:'inherit',env:{...process.env,WARDTONE_DEV_URL:'http://127.0.0.1:5193'}});
+child.on('exit', async code=>{await server.close();process.exit(code??1)});
+child.on('error', error=>{console.error(error);process.exitCode=1});

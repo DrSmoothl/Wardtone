@@ -1,0 +1,93 @@
+[
+  {
+    "key": "AUTOCHESS_GAME_START",
+    "trigger": 35,
+    "probability": 1.0,
+    "cd": 0,
+    "priority": 1
+  },
+  {
+    "key": "AUTOCHESS_REST_NO_HP_LOSS",
+    "trigger": 36,
+    "probability": 0.8,
+    "cd": 200,
+    "priority": 5
+  },
+  {
+    "key": "AUTOCHESS_REST_HP_LOSS",
+    "trigger": 37,
+    "probability": 0.8,
+    "cd": 200,
+    "priority": 8
+  },
+  {
+    "key": "AUTOCHESS_REST_BOSS",
+    "trigger": 38,
+    "probability": 1.0,
+    "cd": 0,
+    "priority": 2
+  },
+  {
+    "key": "AUTOCHESS_REST_HIDDEN_BOSS",
+    "trigger": 39,
+    "probability": 1.0,
+    "cd": 0,
+    "priority": 6
+  },
+  {
+    "key": "AUTOCHESS_SAME_OPERATOR",
+    "trigger": 40,
+    "probability": 0.3,
+    "cd": 10,
+    "priority": 10
+  },
+  {
+    "key": "AUTOCHESS_BUY_OPERATOR_LOW",
+    "trigger": 41,
+    "probability": 0.2,
+    "cd": 10,
+    "priority": 12
+  },
+  {
+    "key": "AUTOCHESS_BUY_OPERATOR_HIGH",
+    "trigger": 42,
+    "probability": 0.3,
+    "cd": 10,
+    "priority": 11
+  },
+  {
+    "key": "AUTOCHESS_SHOP_UPGRADE",
+    "trigger": 43,
+    "probability": 1.0,
+    "cd": 10,
+    "priority": 4
+  },
+  {
+    "key": "AUTOCHESS_COUNTDOWN",
+    "trigger": 44,
+    "probability": 0.5,
+    "cd": 0,
+    "priority": 7
+  },
+  {
+    "key": "AUTOCHESS_MERGE_TRIPLE",
+    "trigger": 45,
+    "probability": 0.4,
+    "cd": 5,
+    "priority": 9
+  },
+  {
+    "key": "AUTOCHESS_ALLIANCE_LEVEL",
+    "trigger": 46,
+    "probability": 1.0,
+    "cd": 0,
+    "priority": 3
+  },
+  {
+    "key": "AUTOCHESS_FREEZE",
+    "trigger": 47,
+    "probability": 0.5,
+    "cd": 15,
+    "priority": 13
+  }
+]

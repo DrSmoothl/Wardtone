@@ -1,0 +1,359 @@
+/* Initial terminal: a narrow navigation rail and a gridded mission console. */
+:root[data-chrome="tactical"] .app-layout {
+  background-image: var(--theme-texture), var(--theme-emblem);
+  background-size:
+    28px 28px,
+    100% auto;
+  background-position:
+    center,
+    center bottom;
+  background-repeat: repeat, no-repeat;
+}
+:root[data-chrome="tactical"] .sidebar {
+  width: var(--sidebar-width);
+  flex-basis: var(--sidebar-width);
+  padding: 20px 10px 12px;
+  border-right: 1px solid var(--accent);
+  background: var(--rail-bg);
+}
+:root[data-chrome="tactical"] .brand.small {
+  padding: 0;
+  justify-content: center;
+  margin-bottom: 22px;
+}
+:root[data-chrome="tactical"] .brand.small > span {
+  display: none;
+}
+:root[data-chrome="tactical"] .brand.small img {
+  width: 44px;
+  height: 44px;
+}
+:root[data-chrome="tactical"] .sidebar nav {
+  gap: 9px;
+}
+:root[data-chrome="tactical"] .sidebar nav .button {
+  height: 64px;
+  flex-direction: column;
+  gap: 4px;
+  padding: 6px 0;
+  font-size: 11px;
+  border: 1px solid var(--line);
+  border-radius: 0;
+}
+:root[data-chrome="tactical"] .nav-label {
+  align-items: center;
+}
+:root[data-chrome="tactical"] .nav-label small,
+:root[data-chrome="tactical"] .nav-index {
+  display: none;
+}
+:root[data-chrome="tactical"] .sidebar nav .button > svg {
+  width: 21px;
+  height: 21px;
+}
+:root[data-chrome="tactical"] .sidebar nav .button.active {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  box-shadow: inset 0 3px var(--accent);
+  color: var(--accent);
+}
+:root[data-chrome="tactical"] .sidebar nav .button.nav-group-start {
+  margin-top: 8px;
+}
+:root[data-chrome="tactical"] .sidebar-bottom {
+  padding-top: 18px;
+}
+:root[data-chrome="tactical"] .connection-button {
+  border: 1px solid var(--line-2);
+  height: 40px;
+  padding: 6px;
+}
+:root[data-chrome="tactical"] .connection-button > span:not(.status-dot),
+:root[data-chrome="tactical"] .connection-button > svg,
+:root[data-chrome="tactical"] .app-version {
+  display: none;
+}
+:root[data-chrome="tactical"] .page-header {
+  height: var(--header-height);
+  border-bottom: 1px solid var(--line-2);
+  background: color-mix(in oklch, var(--bg-side), transparent 10%);
+}
+:root[data-chrome="tactical"] .page-header h1 {
+  font-weight: 600;
+  letter-spacing: 6px;
+}
+:root[data-chrome="tactical"] .page-overline {
+  color: var(--accent);
+  font-size: 11px;
+  letter-spacing: 4px;
+}
+:root[data-chrome="tactical"] .page-title {
+  border-left: 5px solid var(--signal);
+  padding-left: 14px;
+}
+:root[data-chrome="tactical"] .page-content {
+  background: color-mix(in oklch, var(--bg), transparent 10%);
+}
+:root[data-chrome="tactical"] .workbench-layout {
+  grid-template-columns: minmax(0, 1.5fr) minmax(280px, 1fr);
+  gap: 20px;
+}
+:root[data-chrome="tactical"]
+  :is(
+    .terminal-console,
+    .workspace-summary,
+    .library-console,
+    .editor-metadata,
+    .editor-tracks
+  ) {
+  border: 1px solid var(--line-2);
+  border-top: 3px solid var(--accent);
+  border-radius: 0;
+  background: var(--bg-side);
+}
+:root[data-chrome="tactical"] .module-caption {
+  color: var(--accent);
+  background: var(--bg-side);
+  border-bottom: 1px solid var(--line);
+  letter-spacing: 2px;
+  height: 33px;
+}
+:root[data-chrome="tactical"] .terminal-console {
+  overflow: hidden;
+}
+:root[data-chrome="tactical"] .console-display {
+  min-height: 230px;
+  background: var(--theme-texture);
+  background-size: 24px 24px;
+}
+:root[data-chrome="tactical"] .console-copy {
+  padding: 25px;
+}
+:root[data-chrome="tactical"] .console-copy h2 {
+  font-size: 33px;
+  line-height: 1.4;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+:root[data-chrome="tactical"] .console-edition {
+  border: 1px solid var(--signal);
+  color: var(--signal);
+  padding: 3px 7px;
+  font-size: 10px;
+}
+:root[data-chrome="tactical"] .console-object {
+  width: 43%;
+  height: 92%;
+  right: -2%;
+  top: 5%;
+  opacity: 0.7;
+}
+:root[data-chrome="tactical"] .console-sticker {
+  right: 24px;
+  bottom: 35px;
+  width: 160px;
+  height: 140px;
+  opacity: 0.7;
+}
+:root[data-chrome="tactical"] .console-registration {
+  color: var(--accent);
+  bottom: 12px;
+  letter-spacing: 2px;
+}
+:root[data-chrome="tactical"] .console-actions {
+  border-top: 1px solid var(--line);
+  padding: 15px 24px;
+}
+:root[data-chrome="tactical"] .console-new {
+  border: 0;
+  color: var(--bg-side);
+  background: var(--theme-control) center / 100% 100% no-repeat;
+  padding-inline: 22px;
+  height: 44px;
+}
+:root[data-chrome="tactical"] .resource-symbol {
+  width: 32px;
+  height: 32px;
+}
+:root[data-chrome="tactical"] .summary-numbers {
+  gap: 6px;
+  padding: 18px 16px 48px;
+  background: var(--theme-sticker) center / contain no-repeat;
+}
+:root[data-chrome="tactical"] .summary-number {
+  border: 1px solid var(--line-2);
+  background: color-mix(in oklch, var(--bg-side), transparent 14%);
+  padding: 16px 0;
+  position: relative;
+}
+:root[data-chrome="tactical"] .summary-number:last-child {
+  border-right: 1px solid var(--line-2);
+}
+:root[data-chrome="tactical"] .summary-number strong {
+  color: var(--accent);
+}
+:root[data-chrome="tactical"] .summary-number::after {
+  content: "";
+  width: 16px;
+  height: 2px;
+  background: var(--signal);
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+}
+:root[data-chrome="tactical"] .pack-section > .section-heading {
+  border-bottom: 1px solid var(--accent);
+  padding: 10px 0;
+}
+:root[data-chrome="tactical"] .pack-section h2 {
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+:root[data-chrome="tactical"] .pack-row {
+  background: var(--bg-side);
+  border-left: 4px solid var(--accent);
+}
+:root[data-chrome="tactical"] .pack-art {
+  background: var(--theme-object) center / cover no-repeat;
+  border-color: var(--accent);
+}
+:root[data-chrome="tactical"] .pack-serial {
+  left: 6px;
+  bottom: 2px;
+  background: var(--bg-side);
+  color: var(--accent);
+  padding: 0 3px;
+}
+:root[data-chrome="tactical"]
+  :is(.button-primary, .button-secondary, .select-trigger) {
+  border-radius: 0;
+  border-width: 1px;
+}
+:root[data-chrome="tactical"] .button-primary {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--bg-side);
+  box-shadow: inset 0 -3px color-mix(in oklch, var(--bg-side), transparent 80%);
+}
+:root[data-chrome="tactical"] .page-library {
+  display: grid;
+  grid-template-columns: 188px minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+}
+:root[data-chrome="tactical"] .bundle-channels {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin: 0;
+}
+:root[data-chrome="tactical"] .bundle-channel {
+  height: 78px;
+  padding: 10px;
+  border-left: 3px solid var(--line-2);
+  background: var(--bg-side);
+}
+:root[data-chrome="tactical"] .bundle-channel > .channel-number {
+  font-size: 16px;
+}
+:root[data-chrome="tactical"] .bundle-channel > strong {
+  font-size: 24px;
+}
+:root[data-chrome="tactical"] .bundle-channel[aria-pressed="true"] {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+:root[data-chrome="tactical"] .voice-table th {
+  background: var(--accent-soft);
+  color: var(--accent-ink);
+}
+:root[data-chrome="tactical"] .voice-table td {
+  border-bottom-style: dashed;
+}
+:root[data-chrome="tactical"] .checkbox {
+  border-radius: 0;
+}
+:root[data-chrome="tactical"] .switch {
+  width: 34px;
+  border: 1px solid var(--line-2);
+  border-radius: 0;
+  height: 20px;
+}
+:root[data-chrome="tactical"] .switch-thumb {
+  border-radius: 0;
+  width: 12px;
+}
+:root[data-chrome="tactical"] .switch[data-state="checked"] .switch-thumb {
+  transform: translateX(16px);
+}
+:root[data-chrome="tactical"] .theme-card {
+  border-radius: 0;
+  border-top: 3px solid var(--line-2);
+}
+:root[data-chrome="tactical"] .theme-card[aria-checked="true"] {
+  border-color: var(--accent);
+  box-shadow: inset 0 0 0 1px var(--accent);
+}
+:root[data-chrome="tactical"]
+  :is(.dialog, .select-menu, .help-content, .volume-menu, .audio-player) {
+  border: 1px solid var(--accent);
+  border-radius: 0;
+}
+:root[data-chrome="tactical"] .dialog > header {
+  background: var(--bg-side);
+  border-bottom: 1px solid var(--accent);
+}
+:root[data-chrome="tactical"] .dialog > header h2 {
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+:root[data-chrome="tactical"] .entry-row {
+  border-bottom: 1px dashed var(--line);
+}
+:root[data-chrome="tactical"] .onboarding-scroll {
+  background: var(--theme-texture), var(--bg);
+  background-size: 30px 30px;
+}
+:root[data-chrome="tactical"] .onboarding {
+  border-top: 4px solid var(--accent);
+  border-bottom: 1px solid var(--line-2);
+  padding-block: 32px;
+}
+@container (max-width: 950px) {
+  :root[data-chrome="tactical"] .page-library {
+    display: block;
+  }
+  :root[data-chrome="tactical"] .bundle-channels {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-bottom: 18px;
+  }
+  :root[data-chrome="tactical"] .workbench-layout {
+    grid-template-columns: minmax(0, 1.3fr) minmax(250px, 1fr);
+  }
+  :root[data-chrome="tactical"] .console-copy h2 {
+    font-size: 28px;
+  }
+}
+@media (max-height: 720px) {
+  :root[data-chrome="tactical"] .sidebar nav .button {
+    height: 54px;
+  }
+}
+@container (max-width: 670px) {
+  :root[data-chrome="tactical"] .workbench-layout {
+    grid-template-columns: 1fr;
+  }
+  :root[data-chrome="tactical"] .bundle-channels {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+:root[data-chrome="tactical"] .connection-button > .connection-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  color: var(--accent);
+}
+:root[data-chrome="tactical"] .connection-button.button {
+  justify-content: center;
+}

@@ -1,0 +1,794 @@
+[
+  {
+    "signal": "ui.ON_AUTOCHESS_SHOP_UPGRADE",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_shop_upgrade",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_SHOP_LOCK",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_shop_lock",
+    "maxVoices": 1,
+    "replaceOldest": true,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_GETMONEY",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_getmoney",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "battle.ON_AUTOCHESS_EQUIP_DONE",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_equip",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_BROADCASTHINT",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_broadcasthint",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "battle.ON_AUTOCHESS_CHAR_BONUS",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_characterupgrade",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "battle.ON_AUTOCHESS_ENTER_DANGER",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_harmful",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "battle.ON_AUTOCHESS_EQUIP_BONUS",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_equipupgrade",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_BATTLESTART",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_battlestart",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_YOURTURN_CIRCLE",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_yourturn_circle",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_TARGET",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_target",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_ROUNDSTART",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_roundstart",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_REST",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_rest",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "battle.ON_AUTOCHESS_ADD_BOND",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_buffup",
+    "maxVoices": 1,
+    "replaceOldest": true,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_BOSSROUND_TEAM",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_bossround_team",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0.12,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_BOSSROUND_SINGLE",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_bossround_single",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_BOSSROUND_SECRET",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_bossround_secret",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_KILLBOSS_ALL",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_killboss_all",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_KILLBOSS",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_killboss",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_DEFENCE_UNITE",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_defence_unite",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_DEFENCE_START",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_defence_start",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_BATTLEOVER_REDUCE",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_battleover_reduce",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_BATTLEOVER_NOREDUCE",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_battleover_noreduce",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_BATTLEOVER_NORMAL",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_battleover_normal",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_GOFIRST",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_g_ui_gofirst",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_DISCONNECT",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_g_ui_disconnect",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_KILLBOSS_NORMAL",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_killboss_normal",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_BATTLESTART_BOSS",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_battlestart_boss",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_POPUPGRADE",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_popupgrade",
+    "maxVoices": 3,
+    "replaceOldest": true,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_POPNOREDUCE",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_popnoreduce",
+    "maxVoices": 3,
+    "replaceOldest": true,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_POPGOFIRST",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_popgofirst",
+    "maxVoices": 3,
+    "replaceOldest": true,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_POPDAMAGE_20",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_popdamage_20",
+    "maxVoices": 2,
+    "replaceOldest": true,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_POPDAMAGE_40",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_popdamage_40",
+    "maxVoices": 2,
+    "replaceOldest": true,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_POPDAMAGE_80",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_popdamage_80",
+    "maxVoices": 2,
+    "replaceOldest": true,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_ACTIVATION",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_activation",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_SKILLSWAP",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_skillswap",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_CURSORDRAG",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_cursordrag",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_LOAD3",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_load_3",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_BATTLEOVER_NOREDUCE_AC_S_CLOSUR",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_battleover_noreduce_closure",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_BATTLEOVER_NORMAL_AC_S_CLOSUR",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_battleover_normal_closure",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_BATTLEOVER_REDUCE_AC_S_CLOSUR",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_battleover_reduce_closure",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_ROUNDSTART_AC_S_CLOSUR",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_roundstart_closure",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_DEFENCE_UNITE_AC_S_CLOSUR",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_defence_unite_closure",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_BATTLESTART_BOSS_AC_S_CLOSUR",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_battlestart_boss_closure",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_YOURTURN_CIRCLE_AC_S_CLOSUR",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_yourturn_circle_closure",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_COUNTDOWN_AC_S_CLOSUR",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_g_ui_countdown_closure",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_SHOP_UPGRADE_AC_S_CLOSUR",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_shop_upgrade_closure",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_SHOP_BUY_AC_S_CLOSUR",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_b_ui_shop_buy_closure",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_STRATEGYDETAIL",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_g_ui_strategydetail",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_SETTLEMENT_TEAM",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_g_ui_settlement_team",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_MATCH_SUCCEED",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_g_ui_match_succeed",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_MATCH_FAIL",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_g_ui_match_fail",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_MATCH_CANCEL",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_g_ui_match_cancel",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_PLAYER_JOINROOM",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_g_ui_player_joinroom",
+    "maxVoices": 1,
+    "replaceOldest": true,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_PLAYER_READY",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_g_ui_player_ready",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_YOURTURN",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_g_ui_yourturn",
+    "maxVoices": 1,
+    "replaceOldest": true,
+    "loop": false,
+    "delay": 0.2,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_STRATEGY",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_g_ui_strategy",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_COUNTDOWN",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_g_ui_countdown",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_SETTLEMENT_FAIL",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_g_ui_settlement_fail",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_SETTLEMENT_SUCCEED",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_g_ui_settlement_succeed",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_SETTLEMENT_BOSSSIGN",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_g_ui_settlement_bosssign",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_GOODEVALUATION",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_g_ui_goodevaluation",
+    "maxVoices": 1,
+    "replaceOldest": true,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_STANDBYCHECK",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_g_ui_standbycheck",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_READYTOPLAY",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_g_ui_readytoplay",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_ADMISSION",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_g_ui_admission",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "ui.ON_AUTOCHESS_START",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_g_ui_start",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "battle.ON_AUTOCHESS_MAGIC_PLACE_BATTLE",
+    "asset": "Audio/Sound_Beta_2/PersistSE/autochess/autochess_a_bat_usmgbf",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "battle.ON_ABILITY_ON.trap_1104_aclasert.attack.0",
+    "asset": "Audio/Sound_Beta_2/CustomSE/act1autochess/act1autochess_a_bat_enrylmchfr",
+    "maxVoices": 2,
+    "replaceOldest": true,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "battle.ON_PROJECTILE_HIT.projectile_trap_aclasert",
+    "asset": "Audio/Sound_Beta_2/CustomSE/act1autochess/act1autochess_a_bat_enrylmcht",
+    "maxVoices": 2,
+    "replaceOldest": true,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "battle.ON_AC_SKIN_SE.ac_n_iron.cn_001",
+    "asset": "Audio/Sound_Beta_2/AutoChessSkinSE/ac_n_iron/CN_001",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "battle.ON_AC_SKIN_SE.ac_n_iron.cn_002",
+    "asset": "Audio/Sound_Beta_2/AutoChessSkinSE/ac_n_iron/CN_002",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "battle.ON_AC_SKIN_SE.ac_n_iron.cn_003",
+    "asset": "Audio/Sound_Beta_2/AutoChessSkinSE/ac_n_iron/CN_003",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "battle.ON_AC_SKIN_SE.ac_n_iron.cn_004",
+    "asset": "Audio/Sound_Beta_2/AutoChessSkinSE/ac_n_iron/CN_004",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "battle.ON_AC_SKIN_SE.ac_n_iron.cn_005",
+    "asset": "Audio/Sound_Beta_2/AutoChessSkinSE/ac_n_iron/CN_005",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "battle.ON_AC_SKIN_SE.ac_n_iron.cn_006",
+    "asset": "Audio/Sound_Beta_2/AutoChessSkinSE/ac_n_iron/CN_006",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "battle.ON_AC_SKIN_SE.ac_n_iron.cn_007",
+    "asset": "Audio/Sound_Beta_2/AutoChessSkinSE/ac_n_iron/CN_007",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "battle.ON_AC_SKIN_SE.ac_n_iron.cn_008",
+    "asset": "Audio/Sound_Beta_2/AutoChessSkinSE/ac_n_iron/CN_008",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "battle.ON_AC_SKIN_SE.ac_n_iron.cn_009",
+    "asset": "Audio/Sound_Beta_2/AutoChessSkinSE/ac_n_iron/CN_009",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "battle.ON_AC_SKIN_SE.ac_n_iron.cn_010",
+    "asset": "Audio/Sound_Beta_2/AutoChessSkinSE/ac_n_iron/CN_010",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "battle.ON_AC_SKIN_SE.ac_n_iron.cn_011",
+    "asset": "Audio/Sound_Beta_2/AutoChessSkinSE/ac_n_iron/CN_011",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "battle.ON_AC_SKIN_SE.ac_n_iron.cn_012",
+    "asset": "Audio/Sound_Beta_2/AutoChessSkinSE/ac_n_iron/CN_012",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "battle.ON_AC_SKIN_SE.ac_n_iron.cn_013",
+    "asset": "Audio/Sound_Beta_2/AutoChessSkinSE/ac_n_iron/CN_013",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "battle.ON_AC_SKIN_SE.ac_n_iron.cn_014",
+    "asset": "Audio/Sound_Beta_2/AutoChessSkinSE/ac_n_iron/CN_014",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "battle.ON_AC_SKIN_SE.ac_n_iron.cn_017",
+    "asset": "Audio/Sound_Beta_2/AutoChessSkinSE/ac_n_iron/CN_017",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "battle.ON_AC_SKIN_SE.ac_n_iron.cn_018",
+    "asset": "Audio/Sound_Beta_2/AutoChessSkinSE/ac_n_iron/CN_018",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "battle.ON_AC_SKIN_SE.ac_n_iron.cn_019",
+    "asset": "Audio/Sound_Beta_2/AutoChessSkinSE/ac_n_iron/CN_019",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "battle.ON_AC_SKIN_SE.ac_n_iron.cn_020",
+    "asset": "Audio/Sound_Beta_2/AutoChessSkinSE/ac_n_iron/CN_020",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  },
+  {
+    "signal": "battle.ON_AC_SKIN_SE.ac_n_iron.cn_021",
+    "asset": "Audio/Sound_Beta_2/AutoChessSkinSE/ac_n_iron/CN_021",
+    "maxVoices": 0,
+    "replaceOldest": false,
+    "loop": false,
+    "delay": 0,
+    "alternatives": 1
+  }
+]

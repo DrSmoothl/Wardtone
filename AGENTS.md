@@ -1,0 +1,24 @@
+# Wardtone · 戍声
+
+- 项目目录为 `~/projects/Wardtone`。英文标识统一使用 Wardtone / wardtone，中文产品名为戍声。
+- Windows/macOS 桌面应用；Electron 主进程、沙盒 preload、React renderer、后台 worker 与资源核心全部使用 TypeScript。发行包内置运行时，用户无需开发环境。
+- 视觉与交互规范以 `docs/design.md` 为准，主题扩展契约见 `docs/themes.md`。四套主题为可露希尔（默认）、卫戍协议终端、乌萨斯齐心团、经典；可露希尔采用顶部任务栏和多窗口桌面，卫戍终端采用窄导航轨与战术面板，乌萨斯采用深青机架与浅色金属面板。经典保持原有紧凑风格。
+- `src/shared/themes.ts` 是主题标识、名称及原生外观的唯一登记表。`src/renderer/themes` 中每套主题输出完整的类型化语义 token，`chrome.css` 定义共享界面槽位，`themes/profiles` 中独立配置三种布局外壳，`tokens.css` 仅保存共用字体栈、阴影和动效。业务页面不能判断具体主题 ID 或硬编码颜色。
+- 界面控件复用 `src/renderer/components/ui.tsx`，不能在页面重新实现下拉菜单、开关、勾选、滚动条和系统风格确认框。主题通过根节点应用，包含 Portal 浮层，切换不能重挂载业务状态。
+- 正文使用系统字体，编号使用随包发布的 IBM Plex Mono。主题标题/读数使用内置得意黑、Chakra Petch、Rajdhani、Barlow Condensed，授权文件在 `resources/licenses`，禁止运行时加载远程字体。经典深浅跟随系统，可露希尔与卫戍终端固定深色，乌萨斯固定浅色。界面缩放由 Electron 统一处理。
+- 应用图标源文件为 `resources/icon.png`，界面副本为 `src/renderer/assets/icon.png`。macOS/Windows 打包均使用同一源图标。
+- 普通关闭窗口与退出菜单经过主进程到 React 的关闭请求。未保存草稿在共享 Modal 中提供继续编辑、舍弃并退出、保存并退出；任务进行时等待任务完成。文件选择和保存位置使用系统文件选择器。
+- 配置版本为 3，`theme` 保存稳定主题 ID。版本 1/2 读取时验证原配置、保留完整备份，再迁移到默认可露希尔主题；旧玫红色迁移为石墨色，其余偏好和连接保持。未知主题 ID 必须报错。主题切换写入 `theme.changed` 日志。
+- 原生客户端通过本地文件适配，模拟器通过 TypeScript ADB 适配。界面提供操作入口，不能要求普通用户执行命令。
+- Windows 自动发现入口在 `src/core/windows-discovery.ts`：通过系统 PowerShell 读取 HKCU/HKLM 的 32/64 位卸载注册表，以 UTF-8 JSON 传回，支持环境变量安装路径、DisplayIcon、Program Files、LocalLow 和 A–Z 盘符的常见游戏目录。候选根目录按 Windows 路径规则去重，资源以实际清单落点为准。注册表调用失败必须报错并记录日志；无效的单个路径记录具体拒绝原因。模拟器扫描内置端口与 ADB server，非默认端口仍由界面指定。
+- 音频库按终端播报、公共音效、背景音乐分类。`src/shared/music.ts` 登记当前四首卫戍音乐及播放事件，`resources.ts` 定义资源分类；背景音乐复用分享包、计划与事务流程。音乐上传默认 44.1 kHz、16 位 PCM，保留最多双声道；紧凑模式为单声道 IMA ADPCM。编码记录声道、采样率、帧数、摘要和字节数；不得静默把立体声音乐转换成单声道。
+- 资源扫描合并同版本 `hot_update_list.json` 中未下载的目标，冲突必须报错；写入计划与事务继续以 `persistent_res_list.json` 为准。`src/shared/cues.ts`、`cue-facts.ts` 与 `cue-data` 是播放用途的唯一来源，按已核对的资源包与编号匹配；新资源显示用途待核对并记日志，不能从文件名猜触发条件。用途文档由 `scripts/export-cue-reference.ts` 生成，保留配置值与实际调用路径的区别。
+- 游戏写入必须经过：验证清单与原包、生成计划、不可变备份、比较当前摘要、原子写入、读回校验、记录事务。重复应用幂等，外部修改必须停止。
+- 不吞错误、不把未知值当成功。关键节点记录操作编号、阶段、文件摘要和失败原因。错误应有具体原因和诊断入口。
+- 界面使用简短中文。解释进入右侧共享信息弹层，当前状态和错误直接显示。减少动态效果时关闭非必要动效。
+- `index.tsx` 只创建一次 React 根节点，包装组件在 `Application.tsx`；主题初始化由 `useTheme` 在布局阶段处理，启动入口不能直接导入会热更新的主题定义。组件文件只导出 React 组件。格式化函数、状态映射与 hooks 单独存放，保证热更新保留编辑状态。
+- 测试真实格式解析、事务中断、回滚、幂等、路径限制、不可信压缩包和配置迁移。开发测试使用临时资源副本，不能自动改用户游戏目录。
+- `npm test` 运行不依赖游戏素材的通用测试，Windows 上额外验证真实注册表的 32/64 位视图与中文目录发现。`npm run test:fixtures` 明确运行 `tests/local` 中的真实资源副本测试，缺少素材必须失败；不能通过检测素材是否存在静默跳过。`npm run test:integration` 复核本机副本的音频与重封装格式。
+- GitHub Actions 的构建入口为 `.github/workflows/build.yml`，push、PR 与手动触发，使用 `windows-latest`、`macos-latest` 和当前最新标准 Intel Mac Runner `macos-26-intel`，开发 Node 版本由 `.node-version` 指定。每个平台安装锁定依赖、类型检查、通用测试、构建打包后上传产物及诊断。Windows 输出 x64 NSIS + ZIP，macOS 输出 arm64/x64 ZIP；真实游戏素材、临时数据和个人配置不进入 Git 或 CI。
+- 技术栈、配置、资源格式或产品流程变化时同步更新本文和对应文档。输出实际变更和验证结果，明确本机、模拟协议和实机证据。
+- 公开文档围绕产品使用、兼容状态、开发接口和素材署名组织。一次性脚本、个人验证记录、资源副本与应用数据保留在被忽略的本机目录；公开提交前核对待提交文件及第三方许可。项目代码采用 MIT，游戏美术与字体等素材的适用范围见 `THIRD_PARTY_NOTICES.md`。
